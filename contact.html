@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Asmita Kandar</title>
+	<style type="text/css">
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url("bck.jpg");
+   background-color: #cccccc;
+   background-size: cover;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+		ul {
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    		overflow: hidden;
+    		background-color: #333;
+			}
+
+		li {
+    		float: left;
+			}
+
+		li a {
+    		display: block;
+    		color: white;
+    		text-align: center;
+    		padding: 14px 16px;
+    		text-decoration: none;
+			}
+
+		li a:hover {
+    		background-color: #111;
+			}
+			.active{
+				background-color:blue;
+			}
+	</style>
+</head>
+	<body>
+		<ul>
+ 			<li style="padding-left: 60px; " ><a href="home.html">Home</a></li>
+  			<li style="padding-left: 200px"><a href="project.html" >Projects</a></li>
+  			<li style="padding-left: 200px"><a href="skills.html" >Skills</a></li>
+  			<li style="padding-left: 200px"><a href="contact.html" class="active">Contact</a></li>
+ 		 	<li style="padding-left: 150px"><a href="about.html">About</a></li>
+		</ul>
+		<h1 style="padding: 15px; border: 2px solid black; background-color:#D3D3D3;"><center>Contact Me</center></h1>
+		<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="eid">Email id</label>
+    <input type="text" id="eid" name="emailid" placeholder="Your email id..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write your query.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+		
+	</body>
+</html>
